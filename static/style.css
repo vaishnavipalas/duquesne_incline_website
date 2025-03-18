@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
@@ -9,44 +9,70 @@
     margin: 5px;
 }
 
-
 #webname {
     background-color: #335c67;
     color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 body {
     background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 nav a {
-    text-decoration: None;
+    text-decoration: none;
     color: white;
     margin-right: 15px;
+    font-weight: bold;
+}
 
+.main {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.section-header {
+    color: #335c67;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
 }
 
 table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
     background-color: #335c67;
     color: white;
-    width: fit-content;
 }
 
 table tr:nth-child(even) {
     background-color: #d9d9d9ff;
 }
 
-form * {
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-
-button {
+footer {
     background-color: #335c67;
     color: white;
-    border: none;
-    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }
