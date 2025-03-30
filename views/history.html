@@ -1,32 +1,73 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../static/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duquesne Incline</title>
     <meta name="author" content="Vaishnavi Palasamudrum">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Duquesne Incline Web Dev Project">
+    
+    <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+        crossorigin="anonymous"></script>
 </head>
-<body style="font-family: Arial">
+<body style="font-family: Arial;">
     <header id="webname">
-        <h1>Duquesne Incline</h1>
-        <img src="../static/Downtown_from_Incline.jpg" alt="Duquesne Incline Banner" class="banner" width="400" height="270">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="visitor-info.html">Vistor Information</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List!</a></nav>
+        <div class="navbar">
+            <img src="../static/logo.png" alt="Duquesne Incline Banner" class="banner">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="visitor-info.html">Visitor Information</a>
+                <a href="gift-shop.html">Gift Shop</a>
+                <a href="resources.html">Resources</a>
+                <a href="mailing-list.html" class="cta">Join our Mailing List!</a>
+            </nav>
+        </div>
     </header>
-    <body>
-        <p>history</p>
-    </body>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>About the Duquesne Incline</h1>
+            </div>
+        </section>
+        <p class="photo-credit">Photo courtesy of<a href="https://commons.wikimedia.org/wiki/File:Downtown Pittsburgh from Duquesne Incline in the morning.jpg" target="_blank">Dllu</a></p>
+
+        
+        <div class="info">
+            <h2>Early History</h2>
+            <p>
+                The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.
+            </p>
+            <span id="readMore" class="readmoreless">Read More</span>
+            
+            <p id="longIntro">
+                Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.
+                At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.
+            </p>
+            <span id="readLess" class="readmoreless">Read Less</span>
+        </div>
+        
+        <div class="info">
+            <!-- video -->
+            <h2>Duquesne Incline Offers Scenic Views And Pittsburgh History | NBC Nightly News</h2>
+            <iframe width="660" height="415" 
+                src="https://www.youtube.com/embed/N-etInRZuhk?si=3x5IkDLNJtu1DSDw" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
     <footer>
         © 2025 designed and coded by Vaishnavi Palasamudrum
     </footer>
-    
 </body>
 </html>

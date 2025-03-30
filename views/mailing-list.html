@@ -1,32 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duquesne Incline</title>
-    <meta name="author" content="Vaishnavi Palasamudrum">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Dev Project">
+    <title>Mailing List</title>
 </head>
-<body style="font-family: Arial">
-    <header id="webname">
-        <h1>Duquesne Incline</h1>
-        <img src="../static/Downtown_from_Incline.jpg" alt="Duquesne Incline Banner" class="banner" width="400" height="270">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="visitor-info.html">Vistor Information</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List!</a></nav>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../static/logo.png" alt="Duquesne Incline Banner" class="banner">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="visitor-info.html">Visitor Information</a>
+                <a href="gift-shop.html">Gift Shop</a>
+                <a href="resources.html">Resources</a>
+                <a href="mailing-list.html" class="cta">Join our Mailing List!</a>
+            </nav>
+        </div>
     </header>
-    <body>
-        <p>mailing list form</p>
-    </body>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Join the Mailing List!</h1>
+            </div>
+        </section>
+        <p class="photo-credit">Photo courtesy of<a href="https://commons.wikimedia.org/wiki/File:Downtown Pittsburgh from Duquesne Incline in the morning.jpg" target="_blank">Dllu</a></p>
+        <div class="form-container">
+            <form id="mailingListForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Mobile (Optional):</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10">
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="smsOptIn" name="smsOptIn">
+                    <label for="smsOptIn">SMS</label>
+                </div>
+                
+                <label for="zip">Zip code (Optional):</label>
+                <input type="text" id="zip" name="zip" pattern="\d{5}" maxlength="5">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
     <footer>
         © 2025 designed and coded by Vaishnavi Palasamudrum
     </footer>
-    
 </body>
 </html>

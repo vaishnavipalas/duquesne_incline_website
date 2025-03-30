@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="static/style.css">
+    <script defer src="./static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duquesne Incline</title>
@@ -11,61 +13,105 @@
 </head>
 <body>
     <header id="webname">
-        <h1>Duquesne Incline</h1>
-        <img src="static/Downtown_from_Incline.jpg" alt="Duquesne Incline Banner" class="banner" width="400" height="270">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="views/history.html">History</a>
-            <a href="views/visitor-info.html">Visitor Information</a>
-            <a href="views/gift-shop.html">Gift Shop</a>
-            <a href="views/mailing-list.html">Join the Mailing List!</a>
-        </nav>
+        <div class="navbar">
+            <img src="static/logo.png" alt="Duquesne Incline Banner" class="banner">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="views/history.html">History</a>
+                <a href="views/visitor-info.html">Visitor Information</a>
+                <a href="views/gift-shop.html">Gift Shop</a>
+                <a href="views/resources.html">Resources</a>
+                <a href="views/mailing-list.html" class="cta">Join our Mailing List!</a>
+            </nav>
+        </div>
     </header>
-    <div class="main">
-        <h2>One of the Top Ten Sites in the World - USA Today</h2>
-        <!-- <img src="static/Downtown_from_Incline.jpg" alt="Incline Picture" width="400" height="270"> -->
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Duquesne Incline</h1>
+                <p>"One of the Top Ten Sites in the World For Viewing a Cityscape" - USA Today</p>
+            </div>
+        </section>
+        <p class="photo-credit">Photo courtesy of<a href="https://commons.wikimedia.org/wiki/File:Downtown Pittsburgh from Duquesne Incline in the morning.jpg" target="_blank">Dllu</a></p>
 
-        <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
-        
-        <h2>Address</h2>
+        <section class="info">
+            <h2>Take a Step Back in Time</h2>
+            <p>See the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
+            
+            <!-- image gallery -->
+            <h2>Gallery</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="static/image1.jpg" alt="Duquesne Incline View">
+                    <p class="photo-credit">Photo courtesy of<a href="https://www.stationsquare.com/Duquesne-Incline/" target="_blank">Station Square</a></p>
+                </div>
+                <div class="slide fade">
+                    <img src="static/image2.webp" alt="Historical Duquesne Incline">
+                    <p class="photo-credit">Photo courtesy of<a href="https://dustinmcgrewphoto.com/products/photo-of-the-duquesne-incline-with-fall-colors-in-pittsburgh-pa" target="_blank">Dustin McGrew</a></p>
+                </div>
+                <div class="slide fade">
+                    <img src="static/image3.jpg" alt="The Duquesne Incline">
+                    <p class="photo-credit">Photo courtesy of<a href="https://thetvtraveler.com/pittsburgh-duquesne-incline/" target="_blank">The TV Traveler</a></p>
+                </div>
+            </div>
+            
+            <p></p>
+            <p></p>
+            <!-- address -->
+            <h2>Address</h2>
         <p class="highlighted">1197 West Carson Street, Pittsburgh, PA 15219</p>
-        
+
+        <!-- display hours -->
         <h2>Hours</h2>
-        <p class="highlighted">6:30 a.m. to 12:30 a.m. every day of the year</p>
+        <p class="highlighted">Open 365 days a year</p>
+            <p>Operating Hours: 6:30 a.m. to 12:30 a.m.</p>
+            <p>No reservations or advance tickets required</p>
         
+            <!-- fares -->
         <h2>Fares</h2>
-        <table>
-            <tr>
-                <th>Category</th>
-                <th>One Way</th>
-                <th>Round Trip</th>
-            </tr>
-            <tr>
-                <td>Adults (12-64)</td>
-                <td>$2.50</td>
-                <td>$5.00</td>
-            </tr>
-            <tr>
-                <td>Children (6-11)</td>
-                <td>$1.25</td>
-                <td>$2.50</td>
-            </tr>
-            <tr>
-                <td>Students (UPitt, CMU, and Chatham University)</td>
-                <td colspan="2">Free with proper ID</td>
-            </tr>
-            <tr>
-                <td>Adults (Group)</td>
-                <td>$1.75</td>
-                <td>$3.50</td>
-            </tr>
-            <tr>
-                <td>Children (Group)</td>
-                <td>$1.00</td>
-                <td>$1.75</td>
-            </tr>
-        </table>
-    </div>
+            <table class="fares-table">
+                <tr>
+                    <th>Category</th>
+                    <th>One Way</th>
+                    <th>Round Trip</th>
+                </tr>
+                <tr>
+                    <td>Adults (12-64)</td>
+                    <td>$2.50</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Children (6-11)</td>
+                    <td>$1.25</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>Children 5 and Under</td>
+                    <td colspan="2">Free</td>
+                </tr>
+                <tr>
+                    <td>University Students (Pitt, CMU, Chatham)</td>
+                    <td colspan="2">Free with ID</td>
+                </tr>
+                <tr>
+                    <td>Group Rates (Adults)</td>
+                    <td>$1.75</td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>Group Rates (Children)</td>
+                    <td>$1.00</td>
+                    <td>$1.75</td>
+                </tr>
+                <tr>
+                    <td>Seniors (65+)</td>
+                    <td colspan="2">Free with valid PRT/Senior Connect Card</td>
+                </tr>
+            </table>
+        
+        </section>
+        
+    </main>
     <footer>
         © 2025 designed and coded by Vaishnavi Palasamudrum
     </footer>

@@ -9,25 +9,11 @@
     margin: 5px;
 }
 
-#webname {
-    background-color: #335c67;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-
 body {
     background-color: white;
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    margin-right: 15px;
-    font-weight: bold;
 }
 
 .main {
@@ -36,16 +22,102 @@ nav a {
     text-align: left;
 }
 
+/* navigation bar */
+.navbar {
+    background-color: #335c67;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.banner {
+    width: 80px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.cta {
+    background-color: white;
+    color: #335c67;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* hero section */
+.hero {
+    background: url('Downtown_from_Incline.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: white;
+    color: #335c67;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* information styling */
+.info {
+    padding: 50px;
+}
+
+.info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* table styling */
 .section-header {
     color: #335c67;
     font-size: 1.5em;
     margin-top: 20px;
-}
-
-.highlight {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #000;
 }
 
 table {
@@ -69,10 +141,279 @@ table tr:nth-child(even) {
     background-color: #d9d9d9ff;
 }
 
+/* footer */
 footer {
     background-color: #335c67;
     color: white;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+
+/* read more/less */
+#readLess {
+    display: none;
+}
+
+#longIntro {
+    display: none;
+}
+
+.readmoreless {
+    background-color: #335c67;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* center video */
+.history_video {
+    text-align: center;
+}
+
+/* for form */
+.form-container {
+    background: white;
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #335c67;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #264653;
+}
+
+/* gift shop */
+
+.shop-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.shop-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.shop-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.item-price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* resources */
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.links-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links-group h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.links-group a {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.links-group img {
+    width: 80px;
+    height: auto;
+}
+
+/* carousel styling */
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 15px;
+}
+
+.carousel-logo {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.carousel-item p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carousel-item a:hover {
+    color: #0077cc;
+}
+
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2em;
+}
+
+
+.carousel-next {
+    right: 15px;
+}
+
+/* for google map embedding */
+.map-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 700px;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* make list look better */
+.styled-list {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.styled-list li {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+/* for image slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    max-height: 500px;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+/* for citations */
+.photo-credit {
+    font-size: 12px !important;
+    color: black;
+    text-decoration: none;
 }

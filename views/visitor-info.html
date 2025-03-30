@@ -1,32 +1,133 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duquesne Incline</title>
+    <title>Duquesne Incline - Visitor Information</title>
     <meta name="author" content="Vaishnavi Palasamudrum">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Dev Project">
+    <meta name="description" content="Duquesne Incline Web Dev Project - Visitor Information">
 </head>
 <body style="font-family: Arial">
     <header id="webname">
-        <h1>Duquesne Incline</h1>
-        <img src="../static/Downtown_from_Incline.jpg" alt="Duquesne Incline Banner" class="banner" width="400" height="270">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="visitor-info.html">Vistor Information</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List!</a></nav>
+        <div class="navbar">
+            <img src="../static/logo.png" alt="Duquesne Incline Banner" class="banner">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="visitor-info.html">Visitor Information</a>
+                <a href="gift-shop.html">Gift Shop</a>
+                <a href="resources.html">Resources</a>
+                <a href="mailing-list.html" class="cta">Join our Mailing List!</a>
+            </nav>
+        </div>
     </header>
-    <body>
-        <p>visitor info</p>
-    </body>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Visitor Information</h1>
+            </div>
+        </section>
+        <p class="photo-credit">Photo courtesy of<a href="https://commons.wikimedia.org/wiki/File:Downtown Pittsburgh from Duquesne Incline in the morning.jpg" target="_blank">Dllu</a></p>
+
+        
+        <section>
+        <div class="info">
+            <h2>Location</h2>
+            <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.600802247317!2d-80.02012282394267!3d40.439837571435966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af24753323%3A0x391d7b79fc54985b!2sDuquesne%20Incline!5e0!3m2!1sen!2sus!4v1743314350314!5m2!1sen!2sus" width="100%" height="350" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Check Pittsburgh Weather!</h2>
+            <p id="weatherText">Loading weather...</p>
+            <button id="refreshWeatherBTN" onclick="getWeather()">Refresh Weather</button>
+        </div>
+        <div class="info">
+            <h2>Hours of Operation</h2>
+            <p>Open 365 days a year</p>
+            <p>Operating Hours: 6:30 a.m. to 12:30 a.m.</p>
+            <p>No reservations or advance tickets required</p>
+        </div>
+        <div class="info">
+            <h2>Fares</h2>
+            <table class="fares-table">
+                <tr>
+                    <th>Category</th>
+                    <th>One Way</th>
+                    <th>Round Trip</th>
+                </tr>
+                <tr>
+                    <td>Adults (12-64)</td>
+                    <td>$2.50</td>
+                    <td>$5.00</td>
+                </tr>
+                <tr>
+                    <td>Children (6-11)</td>
+                    <td>$1.25</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>Children 5 and Under</td>
+                    <td colspan="2">Free</td>
+                </tr>
+                <tr>
+                    <td>University Students (Pitt, CMU, Chatham)</td>
+                    <td colspan="2">Free with ID</td>
+                </tr>
+                <tr>
+                    <td>Group Rates (Adults)</td>
+                    <td>$1.75</td>
+                    <td>$3.50</td>
+                </tr>
+                <tr>
+                    <td>Group Rates (Children)</td>
+                    <td>$1.00</td>
+                    <td>$1.75</td>
+                </tr>
+                <tr>
+                    <td>Seniors (65+)</td>
+                    <td colspan="2">Free with valid PRT/Senior Connect Card</td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <h2>Field Trip Program for Students & Youth Groups</h2>
+            <p>A free field trip program is available for students and youth groups of ten or more daily – except Saturdays and Sundays after 12:00 noon due to weekend crowds and limited space. The program includes:</p>
+            <ul class = "styled-list">
+                <li>A teacher's lesson packet for students' specific grade level</li>
+                <li>A round trip ride on the Duquesne Incline</li>
+                <li>A history of inclines in Pittsburgh</li>
+                <li>A discussion about Pittsburgh's industrial past</li>
+                <li>A visit to the machine room to observe the original hoisting equipment in operation and learn about the engineers who built it</li>
+                <li>A panoramic view of Downtown Pittsburgh and The North Shore from our observation deck 400 feet above the three rivers</li>
+                <li>A brief history of the French and Indian War from which the city arose</li>
+            </ul>
+            <p><a href="http://incline.pghfree.net/duquesneincline/view.php?id=1">Click Here To Make Reservations</a></p>
+        </div>
+        <div class="info">
+            <h2>City Tours That Feature the Duquesne Incline</h2>
+            <ul class = "styled-list">
+                <li><a href="http://www.pghtoursandmore.net">Pittsburgh Tours and More</a> 412-323-4707</li>
+                <li><a href="http://www.mollystrolleyspgh.com">Molly's Trolleys</a> 412-281-2055</li>
+                <li><a href="http://www.riversofsteel.com">Rivers of Steel</a> 412-464-4020 or 412-381-8687</li>
+                <li><a href="http://www.pghtours.com">The Pittsburgh Tour Company</a> 412-381-8687</li>
+            </ul>
+        </div>
+        <div class="info">
+            <h2>Contact Information</h2>
+            <p>Phone: 412.381.1665</p>
+            <p>Fax: 412.381.1943</p>
+            <p>Email: <a href="mailto:duq.incline@duquesneincline.org">duq.incline@duquesneincline.org</a></p>
+        </div>
+    </section>
+    </main>
     <footer>
         © 2025 designed and coded by Vaishnavi Palasamudrum
     </footer>
-    
 </body>
 </html>

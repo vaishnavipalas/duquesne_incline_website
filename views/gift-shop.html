@@ -1,32 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../static/style.css">
+    <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duquesne Incline</title>
+    <title>Duquesne Incline - Gift Shop</title>
     <meta name="author" content="Vaishnavi Palasamudrum">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Duquesne Incline Web Dev Project">
 </head>
-<body style="font-family: Arial">
+<body>
     <header id="webname">
-        <h1>Duquesne Incline</h1>
-        <img src="../static/Downtown_from_Incline.jpg" alt="Duquesne Incline Banner" class="banner" width="400" height="270">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="history.html">History</a>
-            <a href="visitor-info.html">Vistor Information</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List!</a></nav>
+        <div class="navbar">
+            <img src="../static/logo.png" alt="Duquesne Incline Banner" class="banner">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="visitor-info.html">Visitor Information</a>
+                <a href="gift-shop.html">Gift Shop</a>
+                <a href="resources.html">Resources</a>
+                <a href="mailing-list.html" class="cta">Join our Mailing List!</a>
+            </nav>
+        </div>
     </header>
-    <body>
-        <p>gift shop</p>
-    </body>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Gift Shop</h1>
+            </div>
+        </section>
+        <p class="photo-credit">Photo courtesy of<a href="https://commons.wikimedia.org/wiki/File:Downtown_Pittsburgh_from_Duquesne_Incline_in_the_morning.jpg" target="_blank">Dllu</a></p>
+
+        <h1>Shop Items</h1>
+        <div class="shop-grid">
+            <div class="shop-item">
+                <img src="../static/shot_glasses.jpg" alt="Shot Glasses">
+                <p class="item-name">Shot Glasses</p>
+                <p class="item-price">$15</p>
+                <p class="photo-credit">Photo courtesy of<a href="https://www.duquesneincline.org/" target="_blank">Duquesne Incline</a></p>
+            </div>
+
+            <div class="shop-item">
+                <img src="../static/ornament.jpg" alt="Incline Ornament">
+                <p class="item-name">Incline Ornament</p>
+                <p class="item-price">$20</p>
+                <p class="photo-credit">Photo courtesy of<a href="https://www.duquesneincline.org/" target="_blank">Duquesne Incline</a></p>
+            </div>
+
+            <div class="shop-item">
+                <img src="../static/postcards.jpg" alt="Postcards">
+                <p class="item-name">Postcards</p>
+                <p class="item-price">$2</p>
+                <p class="photo-credit">Photo courtesy of <a href="https://positivelypittsburgh.com/product/duquesne-incline-in-blue-postcard/" target="_blank">Positively Pittsburgh</a></p>
+            </div>
+        </div>
+    </main>
+
     <footer>
         © 2025 designed and coded by Vaishnavi Palasamudrum
     </footer>
-    
 </body>
 </html>
