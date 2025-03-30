@@ -188,24 +188,29 @@ form {
 }
 
 label {
-    margin-top: 10px;
-    font-size: 14px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+button {
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    font-size: 14px;
 }
 
 .checkbox-group {
     display: flex;
     align-items: center;
-    gap: 5px;
-    margin: 10px 0;
+    margin-top: 10px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
 }
 
 button {
@@ -215,13 +220,14 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     margin-top: 15px;
-    font-size: 1em;
 }
 
 button:hover {
-    background-color: #264653;
+    background-color: #1e3547;
 }
+
 
 /* gift shop */
 
